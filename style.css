@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #acacef;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  width: 80vw;
+  padding: 3em 2.5em;
+  max-width: 37.5em;
+  box-shadow: 0 1, 25em 1.8em rgba(8, 21, 65, 0.25);
+  background-color: #ffffff;
+  border-radius: 0.62em;
+}
+
+.search-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+
+.search-wrapper button {
+  font-size: 1em;
+  background-color: #3d64e6;
+  color: #ffffff;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1.5em;
+}
+
+.search-wrapper input {
+  font-size: 1em;
+  padding: 0 0.62em;
+  border: none;
+  border-bottom: 2px solid #3d64e6;
+  outline: none;
+  color: #3d64e6;
+}
+
+#result {
+  margin-top: 1.25em;
+}
+
+.container .flag-img {
+  display: block;
+  width: 45%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.data-wrapper {
+  letter-spacing: 0.3px;
+  margin-bottom: 1em;
+  font-size: 14px;
+  text-wrap: wrap;
+}
+
+.container h4 {
+  display: inline;
+  font-weight: 500;
+  color: #222a43;
+}
+.container span {
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .search-wrapper button {
+    background-color: #3d64e6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 12px;
+    position: absolute;
+    left: 72%;
+    bottom: 85%;
+    border-radius: 1.5em;
+  }
+
+  .search-wrapper input {
+    font-size: 1em;
+    padding: 0 0.62em;
+    max-width: 180px;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    color: #3d64e6;
+  }
+
+  .search-wrapper input::placeholder {
+    font-size: 0.8em;
+    color: #3d64e6;
+  }
+}
